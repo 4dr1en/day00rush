@@ -1,0 +1,1 @@
+ awk -F ',' 'BEGIN { b=0; top=""} {if ( $3 > b && FNR > 1 && $2 == "Officer" ){ b=$3; top=$0}} END{print top}' tcpd_department.csv 

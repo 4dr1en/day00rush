@@ -1,0 +1,6 @@
+head -n'-2' deposition_Joe_Rugiani.txt > .tmp && mv .tmp deposition_Joe_Rugiani.txt
+
+cat deposition_Joe_Rugiani.txt | sed "s/cadillac jaune/chevrolet impala/" > .tmp && mv .tmp deposition_Joe_Rugiani.txt 
+cat deposition_Joe_Rugiani.txt | sed "s/rouge/vert/" > .tmp && mv .tmp deposition_Joe_Rugiani.txt 
+
+
